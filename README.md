@@ -15,6 +15,7 @@
 ## Model Description
 - `./KoBART-summarization/kobart_summary_epoch15` : huggingface에 있는 gogamza/kobart-summarization 모델을 신문기사 데이터셋으로 16epoch fine-tuning
 - `./KoBART-summarization/kobart_law` : kobart_summary_epoch15 모델로 법률요약문으로 7epoch fine-tunning
+- 학습된 모델 파일은 용량문제로 업로드 하지 않음
 
 # How to fine-tuning
 ## Requirements
