@@ -9,7 +9,7 @@
 - `./KoBART-summarization/` : 학습 코드 폴더
 - `dataset.py` : ai hub 문서요약 데이터셋 .tsv로 변환
 - `submisson.py` : 요약문 생성하여 submisson 파일 생성
-- `gas_to_submission.py` : 가스문건만 법률 파인튜닝 모델로 생성하기 위함
+- `gas_to_submission.py` : 가스문건에 해당하는 부분만 법률용 모델로 생성한 요약문으로 대체
 - `rouge_score.py` : rouge_score 측정
 
 ## Model Description
