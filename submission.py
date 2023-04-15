@@ -20,14 +20,14 @@ def seed_everything(seed: int):
     
 seed_everything(42)
 #%%
-with open('./data/new_test.jsonl', 'r', encoding='utf-8') as f:
+with open('./submission/new_test.jsonl', 'r', encoding='utf-8') as f: # new_test.jsonl 파일 용량 문제로 업로드 x
     jsonl = list(f)
 
 test_data = []
 for json_str in jsonl:
     test_data.append(json.loads(json_str))
 
-submission = pd.read_csv('data/new_sample_submission.csv')
+submission = pd.read_csv('submission/new_sample_submission.csv')
 
 #%%
 for data in test_data:
@@ -73,10 +73,10 @@ for id_, summary_ in zip(test_df['id'], test_df['summary']):
     summary_ = ' '.join(re.sub('\n','',summary_).split())
     submission.loc[idx, 'summary'] = summary_
 
-submission.to_csv('./data/kobart_epoch15_repeat.csv', index=False)
+submission.to_csv('./submission/kobart_epoch15_repeat.csv', index=False)
 
 '''
-#%% kobart-law : 사용x
+#%% kobart-law
 tokenizer = PreTrainedTokenizerFast.from_pretrained('gogamza/kobart-summarization')
 model = BartForConditionalGeneration.from_pretrained('./KoBART-summarization/kobart_law').to('cuda')
 
@@ -114,5 +114,5 @@ for id_, summary_ in zip(law_df['id'], law_df['summary']):
     summary_ = ' '.join(re.sub('\n','',summary_).split())
     submission.loc[idx, 'summary'] = summary_
 
-submission.to_csv('./data/kobart_epoch15_repeat_law.csv', index=False)
+submission.to_csv('./submission/kobart_epoch15_repeat_law.csv', index=False)
 '''
