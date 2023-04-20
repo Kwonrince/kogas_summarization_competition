@@ -17,6 +17,7 @@
 - `./KoBART-summarization/kobart_law` : kobart_summary_epoch15 모델로 법률요약문으로 7epoch fine-tunning
 - 학습된 모델 파일은 용량문제로 업로드 하지 않음
 
+------------------- 
 # How to fine-tuning
 ## Requirements
 - pytorch==1.7.1
