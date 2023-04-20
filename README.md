@@ -2,7 +2,7 @@
 
 한국가스공사에서 주최한 제 3회 빅데이터·인공지능 경진대회에서 예비창업가 부문 최우수상을 수상한 '비정형팀플' 팀의 자료입니다. SKT-AI에서 배포한 [KoBART](https://github.com/SKT-AI/KoBART)를 AI Hub에서 제공하는 [문서요약 텍스트](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=97)로 Fine Tuning을 진행했습니다. (신문기사 약 30만건, 법률문서 약 3만건 사용)
 
-발표자료 및 자세한 내용은 [발표자료](./slides/slides.pdf)에서 확인하실 수 있습니다.
+발표자료 및 자세한 내용은 [발표자료](./slides/slides.pdf)에서 확인할 수 있습니다.
 
 
 ## File Description
